@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int l, r, k;
+    int count = 0;
+    
+    // Read the 3 space-separated integers
+    scanf("%d %d %d", &l, &r, &k);
+    
+    // Loop from l to r (inclusive) and check divisibility
+    for (int i = l; i <= r; i++) {
+        if (i % k == 0) {
+            count++;
+        }
+    }
+    
+    // Print the final count
+    printf("%d\n", count);
+    
+    return 0;
+}
